@@ -19,5 +19,6 @@ namespace SirketOtomasyonu
             loginScreen.ShowDialog();
         }
 
+        
     }
 }
