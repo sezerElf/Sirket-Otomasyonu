@@ -15,6 +15,9 @@ namespace SirketOtomasyonu
         public MainForm()
         {
             InitializeComponent();
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.ShowDialog();
         }
+
     }
 }
