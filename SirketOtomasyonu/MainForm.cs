@@ -19,6 +19,15 @@ namespace SirketOtomasyonu
             loginScreen.ShowDialog();
         }
 
-        
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void addEmployeeBtn_Click(object sender, EventArgs e)
+        {
+            InputWindow inputWindow = new InputWindow(new Employee());
+            inputWindow.ShowDialog();
+        }
     }
 }

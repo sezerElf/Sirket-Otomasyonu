@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.addEmployeeBtn = new System.Windows.Forms.Button();
+            this.addCustomerBtn = new System.Windows.Forms.Button();
+            this.listBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,44 +48,47 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // button1
+            // addEmployeeBtn
             // 
-            this.button1.Location = new System.Drawing.Point(26, 107);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 65);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Çalışan Ekle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addEmployeeBtn.Location = new System.Drawing.Point(26, 107);
+            this.addEmployeeBtn.Name = "addEmployeeBtn";
+            this.addEmployeeBtn.Size = new System.Drawing.Size(118, 65);
+            this.addEmployeeBtn.TabIndex = 1;
+            this.addEmployeeBtn.Text = "Çalışan Ekle";
+            this.addEmployeeBtn.UseVisualStyleBackColor = true;
+            this.addEmployeeBtn.Click += new System.EventHandler(this.addEmployeeBtn_Click);
             // 
-            // button2
+            // addCustomerBtn
             // 
-            this.button2.Location = new System.Drawing.Point(165, 107);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 65);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Müşteri Ekle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.addCustomerBtn.Location = new System.Drawing.Point(165, 107);
+            this.addCustomerBtn.Name = "addCustomerBtn";
+            this.addCustomerBtn.Size = new System.Drawing.Size(118, 65);
+            this.addCustomerBtn.TabIndex = 2;
+            this.addCustomerBtn.Text = "Müşteri Ekle";
+            this.addCustomerBtn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // listBtn
             // 
-            this.button3.Location = new System.Drawing.Point(304, 139);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 33);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Listele";
-            this.button3.UseVisualStyleBackColor = true;
+            this.listBtn.Location = new System.Drawing.Point(304, 139);
+            this.listBtn.Name = "listBtn";
+            this.listBtn.Size = new System.Drawing.Size(118, 33);
+            this.listBtn.TabIndex = 3;
+            this.listBtn.Text = "Listele";
+            this.listBtn.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // exitBtn
             // 
-            this.button4.Location = new System.Drawing.Point(443, 107);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 65);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Çıkış";
-            this.button4.UseVisualStyleBackColor = true;
+            this.exitBtn.Location = new System.Drawing.Point(443, 107);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(118, 65);
+            this.exitBtn.TabIndex = 4;
+            this.exitBtn.Text = "Çıkış";
+            this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Çalışan",
@@ -143,10 +146,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.listBtn);
+            this.Controls.Add(this.addCustomerBtn);
+            this.Controls.Add(this.addEmployeeBtn);
             this.Controls.Add(this.richTextBox1);
             this.Name = "MainForm";
             this.Text = "© All Right Reserved";
@@ -158,10 +161,10 @@
         #endregion
 
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button addEmployeeBtn;
+        private System.Windows.Forms.Button addCustomerBtn;
+        private System.Windows.Forms.Button listBtn;
+        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

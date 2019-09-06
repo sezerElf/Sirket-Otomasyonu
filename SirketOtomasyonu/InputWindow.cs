@@ -12,9 +12,17 @@ namespace SirketOtomasyonu
 {
     public partial class InputWindow : Form
     {
-        public InputWindow()
+        Person person;
+        public InputWindow(Person person)
         {
             InitializeComponent();
+            this.person = person;
+            if (this.person==)
+            {
+
+            }
         }
+
+       
     }
 }
